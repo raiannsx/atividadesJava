@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main{
+    
+	public static void main(String[] args) {
+	    
+	    Scanner calculadora = new Scanner (System.in);
+	
+	    int a, b;
+	    int soma, subtr, mult;
+	    double divi;
+	    
+		System.out.println("informe o primeiro valor: ");
+		a = calculadora.nextInt();
+		
+		System.out.println("informe o segundo valor");
+		b = calculadora.nextInt ();
+		
+		calculadora.close();
+		
+		soma = a + b;
+		subtr = a - b;
+		divi = a / b;
+		mult = a * b;
+		
+		
+		System.out.println("Soma:" + soma);
+		System.out.println("Substração:" + subtr);
+		System.out.println("Multiplicação:" + mult);
+		System.out.println("Divisão:" + divi);
+		
+}
+}
